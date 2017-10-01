@@ -1,4 +1,5 @@
 class Solution(object):
+
     def findPeakElement(self, nums):
         """
         :type nums: List[int]
@@ -9,7 +10,7 @@ class Solution(object):
             return 0
         if lens == 2:
             return 0 if nums[0] > nums[1] else 1
-        if nums[0] > nums [1]:
+        if nums[0] > nums[1]:
             return 0
         if nums[lens - 1] > nums[lens - 2]:
             return lens - 1
